@@ -270,7 +270,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://me.andylistudio.com/2017/03/13/linux/">
+    <link itemprop="mainEntityOfPage" href="http://me.andylistudio.com/2017/12/19/linux/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Greenovia">
@@ -292,7 +292,7 @@
             
               
                 
-                <a class="post-title-link" href="/2017/03/13/linux/" itemprop="url">
+                <a class="post-title-link" href="/2017/12/19/linux/" itemprop="url">
                   linux学习笔记
                 </a>
               
@@ -309,8 +309,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-12T23:49:26Z">
-                2017-03-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-18T23:49:26Z">
+                2017-12-18
               </time>
             
 
@@ -721,6 +721,446 @@
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://me.andylistudio.com/2017/02/07/wxmini/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Greenovia">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oi1u2i1h2.bkt.clouddn.com/sixiblog_icon.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Greenovia的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/02/07/wxmini/" itemprop="url">
+                  微信小程序踩坑
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-06T23:52:56Z">
+                2017-02-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>###微信小程序在电脑能获取到数据，但是手机上却无法显示数据</p>
+<ul>
+<li>微信小程序请求接口时只能使用https协议，电脑上的微信开发者工具不检测域名，所以可以显示<h4 id="ios上可以正常显示数据，但是在安卓设备上却无法显示数据"><a href="#ios上可以正常显示数据，但是在安卓设备上却无法显示数据" class="headerlink" title="ios上可以正常显示数据，但是在安卓设备上却无法显示数据"></a>ios上可以正常显示数据，但是在安卓设备上却无法显示数据</h4></li>
+<li>数据接口url必须加上.json后缀否则在安卓设备上会直接获取到页面的代码而不是json数据<h3 id="如何调用page方法中的变量"><a href="#如何调用page方法中的变量" class="headerlink" title="如何调用page方法中的变量"></a>如何调用page方法中的变量</h3></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">function()&#123;</div><div class="line">    var id = this.data.reportId</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>this.data.reportId</p>
+<h4 id="使用onReachBottom实现上拉加载后当页面没有数据时也会出现加载中的动画"><a href="#使用onReachBottom实现上拉加载后当页面没有数据时也会出现加载中的动画" class="headerlink" title="使用onReachBottom实现上拉加载后当页面没有数据时也会出现加载中的动画"></a>使用onReachBottom实现上拉加载后当页面没有数据时也会出现加载中的动画</h4><ul>
+<li>可以在onReachBottom中套用if条件，判断当列表页的数据量大于一定数量时才执行加载更多的方法，当页面没有数据时就不会出现加载中的动画了</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://me.andylistudio.com/2017/01/03/react/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Greenovia">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oi1u2i1h2.bkt.clouddn.com/sixiblog_icon.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Greenovia的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/01/03/react/" itemprop="url">
+                  React学习笔记
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-03T13:58:47Z">
+                2017-01-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="react是什么"><a href="#react是什么" class="headerlink" title="react是什么"></a>react是什么</h2><p>React 是一个 UI 库，具体说 React 是做 UI 组件的 JavaScript 库，也就是用 JS 写前端UI。不同于 Angular 是一个完整的框架，React 仅仅只是 VIEW 层。</p>
+<h4 id="React-和jsx的关系"><a href="#React-和jsx的关系" class="headerlink" title="React 和jsx的关系"></a>React 和jsx的关系</h4><ul>
+<li>jsx是js的扩展 , 看起来有点像xml , 使用react可以实现jsx到js的转换</li>
+<li><strong>why jsx :</strong> 使用React，不一定非要使用JSX语法，可以使用原生的JS进行开发。但是React作者强烈建议我们使用JSX，因为JSX在定义类似HTML这种树形结构时，十分的简单明了。简明的代码结构更利于开发和维护。 XML有着开闭标签，在构建复杂的树形结构时，比函数调用和对象字面量更易读。<h2 id="JavaScript，nodejs和reactjs以及react，react-native是什么关系"><a href="#JavaScript，nodejs和reactjs以及react，react-native是什么关系" class="headerlink" title="JavaScript，nodejs和reactjs以及react，react native是什么关系"></a>JavaScript，nodejs和reactjs以及react，react native是什么关系</h2></li>
+<li><p>Ecmascript 是一个脚本语言标准，规定这个语言的语法，内置函数等等<br>Javascript是Ecmascript标准的一个实现，简称 js</p>
+</li>
+<li><p>脚本语言本身是文件文件，不能像exe那样直接执行，它要执行需要一个宿主环境，<br>比如浏览器，它提供给js一个window对象和document对象，可以供js操作<br>或者在windows下直接双击.js文件，它是在Jscript宿主下执行的，如果js文件是针对浏览器写的，双击执行一般会直接报错</p>
+</li>
+<li><p>nodejs是javascript的一个web服务器宿主，编写脚本可以直接创建一个web服务器监听访问，然后作一些数据操作和输出。<br>nodejs里有个包管理器叫nmp  一般安装nodejs是为了用它这个包管理器，可以管理很多js实现的功能包</p>
+</li>
+<li>react是基于js的二次解析引擎，它支持在js里直接穿插html代码(有一定的规则要求)，然后解析成正常的js代码并执行。</li>
+<li>react native是基于js和react js的一个开发环境，可以直接用两者的语法开发并编译出原生APP<h3 id="JSX语法初识"><a href="#JSX语法初识" class="headerlink" title="JSX语法初识"></a>JSX语法初识</h3></li>
+<li>声明变量首字母小写 , 声明组件首字母大写</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var MyComponent = React.createClass(&#123;/*...*/&#125;);</div><div class="line">var myElement = &lt;MyComponent someProperty=&#123;true&#125; /&gt;;</div><div class="line">React.render(myElement, document.body);</div></pre></td></tr></table></figure>
+<ul>
+<li>html标签的属性class和for，需要写成className和htmlFor</li>
+<li><p><strong>转化:</strong> </p>
+<p>  JSX将类似XML的语法转化到原生的JavaScript，元素的标签、属性和子元素都会被当作参数传给React.createElement函数</p>
+</li>
+<li><p><strong>js表达式:</strong></p>
+<p>  表达式用{}包起来，不要加引号，加引号就会被当成字符串。</p>
+<p>  JSX是HTML和JavaScript混写的语法，当遇到&lt;，JSX就当HTML解析，遇到{就当JavaScript解析。</p>
+</li>
+<li><strong>属性表达式</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">React.render(</div><div class="line">    &lt;div className=&#123;2 &gt; 1 ? &apos;class-a&apos; : &apos;class-b&apos;&#125;&gt;content&lt;/div&gt;,</div><div class="line">    document.body</div><div class="line">);</div></pre></td></tr></table></figure>
+<ul>
+<li><strong>子表达式</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">var Nav = React.createClass(&#123;</div><div class="line">    render: function () &#123;</div><div class="line">        return &lt;div&gt;nav&lt;/div&gt;</div><div class="line">    &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">React.render(</div><div class="line">    &lt;div&gt;</div><div class="line">        &#123;2 &gt; 1 ? &lt;Nav/&gt; : &lt;div&gt;div&lt;/div&gt;&#125;</div><div class="line">    &lt;/div&gt;,</div><div class="line">    document.body</div><div class="line">);</div></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://me.andylistudio.com/2016/12/14/rails/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Greenovia">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oi1u2i1h2.bkt.clouddn.com/sixiblog_icon.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Greenovia的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/14/rails/" itemprop="url">
+                  rails学习笔记
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-13T23:55:02Z">
+                2016-12-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Rails-介绍："><a href="#Rails-介绍：" class="headerlink" title="Rails 介绍："></a>Rails 介绍：</h2><p>Rails 是使用 Ruby 语言编写的网页程序开发框架，目的是为开发者提供常用组件，简化网页程序的开发。</p>
+<h3 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h3><ul>
+<li>profile 针对每个账户的数据存储</li>
+<li>RESTful(RESTful Web Services)</li>
+<li>CRUD</li>
+</ul>
+<hr>
+<h4 id="rails的mvc处理过程"><a href="#rails的mvc处理过程" class="headerlink" title="rails的mvc处理过程"></a>rails的mvc处理过程</h4><p>对于一次不需要和数据库交互的用户请求，MVC的处理过程是：</p>
+<ul>
+<li>用户请求（浏览器：发出请求）-&gt;</li>
+<li>路由（router：将请求映射至控制器的行为，也就是action）-&gt; </li>
+<li>控制器（controller：对应的action处理相应的请求，处理后交给视图渲染）-&gt; </li>
+<li>视图（view：渲染完成交还给控制器）-&gt;</li>
+<li>控制器（controller：将结果返回给浏览器）-&gt;</li>
+<li>输出（浏览器接到发出请求后的响应）</li>
+</ul>
+<h5 id="两大指导思想："><a href="#两大指导思想：" class="headerlink" title="两大指导思想："></a>两大指导思想：</h5><p>1、不要自我重复<br>2、多约定，少配置</p>
+<hr>
+<h2 id="git常用命令行"><a href="#git常用命令行" class="headerlink" title="git常用命令行"></a>git常用命令行</h2><ul>
+<li>git diff查看差异</li>
+<li>git status项目状态</li>
+<li>git add .保存改动到stash</li>
+<li>git commit -m”第一次提交”</li>
+<li>git push </li>
+<li>git pull</li>
+<li>git config –global user,name “”</li>
+<li>git config –user.email “@”</li>
+</ul>
+<hr>
+<h2 id="nil、empty、blank、present四者的区别"><a href="#nil、empty、blank、present四者的区别" class="headerlink" title="nil、empty、blank、present四者的区别"></a>nil、empty、blank、present四者的区别</h2><ul>
+<li>.nil?</li>
+</ul>
+<p>Ruby方法<br>.nil?方法被放置在Object类中，可以被任何对象调用，如果是nil则返回true<br>在Rails中只有nil对象才会返回true</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">nil.nil? #=&gt; true</div><div class="line">anthing_else.nil? #=&gt; false</div><div class="line">a = nil</div><div class="line">a.nil? #=&gt; true</div><div class="line">&quot;&quot;.nil #=&gt; true</div></pre></td></tr></table></figure>
+<ul>
+<li>.empty?</li>
+</ul>
+<p>Ruby方法<br>如果对集合之外的对象调用.empty?方法，则会抛出NoMethodError<br>可以在字符串、数组、hash这几种集合中使用，且只有当集合长度(length)为0时才会返回true</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&quot;&quot;.empty = true</div><div class="line">&quot; &quot;.empty? = false</div></pre></td></tr></table></figure>
+<ul>
+<li>.blank?</li>
+</ul>
+<p>Rails方法<br>与.empty?的区别： 对于还有空格的字符串也会返回true，并且nil返回的结果也未true<br>可以在任意对象上调用，不限制于集合对象</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">nil.blank? = true</div><div class="line">[].blank? = true</div><div class="line">&#123;&#125;.blank? = true</div><div class="line">&quot;&quot;.blank? = true</div><div class="line">5.blank? == false</div></pre></td></tr></table></figure>
+<ul>
+<li>.present?</li>
+</ul>
+<p>Rails方法<br>如果一个对象不是blank，即会返回true<br>内部实现其实是调用的·blank?，如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">def present?</div><div class="line">    !blank?</div><div class="line">  ends</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
   </section>
 
   
@@ -766,7 +1206,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -779,7 +1219,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

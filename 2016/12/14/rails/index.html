@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="手绘," />
+  <meta name="keywords" content="rails," />
 
 
 
@@ -87,15 +87,46 @@
 
 
 
+<meta name="description" content="Rails 介绍：Rails 是使用 Ruby 语言编写的网页程序开发框架，目的是为开发者提供常用组件，简化网页程序的开发。
+名词解释
+profile 针对每个账户的数据存储
+RESTful(RESTful Web Services)
+CRUD
+
+
+rails的mvc处理过程对于一次不需要和数据库交互的用户请求，MVC的处理过程是：
+
+用户请求（浏览器：发出请求）-&amp;gt;
+路由（router：将">
 <meta property="og:type" content="article">
-<meta property="og:title" content="临摹">
-<meta property="og:url" content="http://me.andylistudio.com/2017/02/10/index/index.html">
+<meta property="og:title" content="rails学习笔记">
+<meta property="og:url" content="http://me.andylistudio.com/2016/12/14/rails/index.html">
 <meta property="og:site_name" content="Greenovia的博客">
-<meta property="og:image" content="http://oi1u2i1h2.bkt.clouddn.com/359271299802905260_%E7%9C%8B%E5%9B%BE%E7%8E%8B.jpg">
-<meta property="og:updated_time" content="2017-03-11T02:27:00.322Z">
+<meta property="og:description" content="Rails 介绍：Rails 是使用 Ruby 语言编写的网页程序开发框架，目的是为开发者提供常用组件，简化网页程序的开发。
+名词解释
+profile 针对每个账户的数据存储
+RESTful(RESTful Web Services)
+CRUD
+
+
+rails的mvc处理过程对于一次不需要和数据库交互的用户请求，MVC的处理过程是：
+
+用户请求（浏览器：发出请求）-&amp;gt;
+路由（router：将">
+<meta property="og:updated_time" content="2017-03-12T16:00:09.290Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="临摹">
-<meta name="twitter:image" content="http://oi1u2i1h2.bkt.clouddn.com/359271299802905260_%E7%9C%8B%E5%9B%BE%E7%8E%8B.jpg">
+<meta name="twitter:title" content="rails学习笔记">
+<meta name="twitter:description" content="Rails 介绍：Rails 是使用 Ruby 语言编写的网页程序开发框架，目的是为开发者提供常用组件，简化网页程序的开发。
+名词解释
+profile 针对每个账户的数据存储
+RESTful(RESTful Web Services)
+CRUD
+
+
+rails的mvc处理过程对于一次不需要和数据库交互的用户请求，MVC的处理过程是：
+
+用户请求（浏览器：发出请求）-&amp;gt;
+路由（router：将">
 
 
 
@@ -123,13 +154,13 @@
 
 
 
-  <link rel="canonical" href="http://me.andylistudio.com/2017/02/10/index/"/>
+  <link rel="canonical" href="http://me.andylistudio.com/2016/12/14/rails/"/>
 
 
 
 
 
-  <title> 临摹 | Greenovia的博客 </title>
+  <title> rails学习笔记 | Greenovia的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -268,7 +299,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://me.andylistudio.com/2017/02/10/index/">
+    <link itemprop="mainEntityOfPage" href="http://me.andylistudio.com/2016/12/14/rails/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Greenovia">
@@ -289,7 +320,7 @@
             
             
               
-                临摹
+                rails学习笔记
               
             
           </h1>
@@ -304,8 +335,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-10T00:25:29+08:00">
-                2017-02-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-14T07:55:02+08:00">
+                2016-12-13
               </time>
             
 
@@ -340,7 +371,55 @@
       
 
       
-        <p><img src="http://oi1u2i1h2.bkt.clouddn.com/359271299802905260_%E7%9C%8B%E5%9B%BE%E7%8E%8B.jpg" alt="banner"></p>
+        <h2 id="Rails-介绍："><a href="#Rails-介绍：" class="headerlink" title="Rails 介绍："></a>Rails 介绍：</h2><p>Rails 是使用 Ruby 语言编写的网页程序开发框架，目的是为开发者提供常用组件，简化网页程序的开发。</p>
+<h3 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h3><ul>
+<li>profile 针对每个账户的数据存储</li>
+<li>RESTful(RESTful Web Services)</li>
+<li>CRUD</li>
+</ul>
+<hr>
+<h4 id="rails的mvc处理过程"><a href="#rails的mvc处理过程" class="headerlink" title="rails的mvc处理过程"></a>rails的mvc处理过程</h4><p>对于一次不需要和数据库交互的用户请求，MVC的处理过程是：</p>
+<ul>
+<li>用户请求（浏览器：发出请求）-&gt;</li>
+<li>路由（router：将请求映射至控制器的行为，也就是action）-&gt; </li>
+<li>控制器（controller：对应的action处理相应的请求，处理后交给视图渲染）-&gt; </li>
+<li>视图（view：渲染完成交还给控制器）-&gt;</li>
+<li>控制器（controller：将结果返回给浏览器）-&gt;</li>
+<li>输出（浏览器接到发出请求后的响应）</li>
+</ul>
+<h5 id="两大指导思想："><a href="#两大指导思想：" class="headerlink" title="两大指导思想："></a>两大指导思想：</h5><p>1、不要自我重复<br>2、多约定，少配置</p>
+<hr>
+<h2 id="git常用命令行"><a href="#git常用命令行" class="headerlink" title="git常用命令行"></a>git常用命令行</h2><ul>
+<li>git diff查看差异</li>
+<li>git status项目状态</li>
+<li>git add .保存改动到stash</li>
+<li>git commit -m”第一次提交”</li>
+<li>git push </li>
+<li>git pull</li>
+<li>git config –global user,name “”</li>
+<li>git config –user.email “@”</li>
+</ul>
+<hr>
+<h2 id="nil、empty、blank、present四者的区别"><a href="#nil、empty、blank、present四者的区别" class="headerlink" title="nil、empty、blank、present四者的区别"></a>nil、empty、blank、present四者的区别</h2><ul>
+<li>.nil?</li>
+</ul>
+<p>Ruby方法<br>.nil?方法被放置在Object类中，可以被任何对象调用，如果是nil则返回true<br>在Rails中只有nil对象才会返回true</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">nil.nil? #=&gt; true</div><div class="line">anthing_else.nil? #=&gt; false</div><div class="line">a = nil</div><div class="line">a.nil? #=&gt; true</div><div class="line">&quot;&quot;.nil #=&gt; true</div></pre></td></tr></table></figure>
+<ul>
+<li>.empty?</li>
+</ul>
+<p>Ruby方法<br>如果对集合之外的对象调用.empty?方法，则会抛出NoMethodError<br>可以在字符串、数组、hash这几种集合中使用，且只有当集合长度(length)为0时才会返回true</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&quot;&quot;.empty = true</div><div class="line">&quot; &quot;.empty? = false</div></pre></td></tr></table></figure>
+<ul>
+<li>.blank?</li>
+</ul>
+<p>Rails方法<br>与.empty?的区别： 对于还有空格的字符串也会返回true，并且nil返回的结果也未true<br>可以在任意对象上调用，不限制于集合对象</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">nil.blank? = true</div><div class="line">[].blank? = true</div><div class="line">&#123;&#125;.blank? = true</div><div class="line">&quot;&quot;.blank? = true</div><div class="line">5.blank? == false</div></pre></td></tr></table></figure>
+<ul>
+<li>.present?</li>
+</ul>
+<p>Rails方法<br>如果一个对象不是blank，即会返回true<br>内部实现其实是调用的·blank?，如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">def present?</div><div class="line">    !blank?</div><div class="line">  ends</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -364,7 +443,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/手绘/" rel="tag"># 手绘</a>
+            <a href="/tags/rails/" rel="tag"># rails</a>
           
         </div>
       
@@ -377,18 +456,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/07/wxmini/" rel="next" title="微信小程序踩坑">
-                <i class="fa fa-chevron-left"></i> 微信小程序踩坑
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/03/09/hexo-d/" rel="prev" title="解决用Hexo和GitHub搭建博客时hexo d命令报错问题">
-                解决用Hexo和GitHub搭建博客时hexo d命令报错问题 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/01/03/react/" rel="prev" title="React学习笔记">
+                React学习笔记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -436,8 +511,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://oi1u2i1h2.bkt.clouddn.com/sixiblog_icon.jpg"
@@ -490,6 +574,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Rails-介绍："><span class="nav-number">1.</span> <span class="nav-text">Rails 介绍：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#名词解释"><span class="nav-number">1.1.</span> <span class="nav-text">名词解释</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#rails的mvc处理过程"><span class="nav-number">1.1.1.</span> <span class="nav-text">rails的mvc处理过程</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#两大指导思想："><span class="nav-number">1.1.1.1.</span> <span class="nav-text">两大指导思想：</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git常用命令行"><span class="nav-number">2.</span> <span class="nav-text">git常用命令行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nil、empty、blank、present四者的区别"><span class="nav-number">3.</span> <span class="nav-text">nil、empty、blank、present四者的区别</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
