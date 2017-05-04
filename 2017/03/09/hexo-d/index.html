@@ -100,7 +100,7 @@
 <meta property="og:image" content="http://img.blog.csdn.net/20170306143047462?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvR3JlZW5vdmlh/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170306143103647?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvR3JlZW5vdmlh/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170306143433698?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvR3JlZW5vdmlh/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2017-03-09T15:47:00.006Z">
+<meta property="og:updated_time" content="2017-05-04T07:50:22.778Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="解决用Hexo和GitHub搭建博客时hexo d命令报错问题">
 <meta name="twitter:description" content="这两天学着使用hexo和github page搭建个人博客到使用hexo deploy自动部署到github page的时候出现了错误：
@@ -352,6 +352,7 @@
       
         <p>这两天学着使用hexo和github page搭建个人博客<br>到使用hexo deploy自动部署到github page的时候出现了错误：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">FATAL bash: /dev/tty: No such device or address</div><div class="line">error: failed to execute prompt script (exit code 1)</div><div class="line">fatal: could not read Username for &apos;https://github.com&apos;: Invalid argument</div><div class="line">Error: bash: /dev/tty: No such device or address</div><div class="line">error: failed to execute prompt script (exit code 1)</div><div class="line">fatal: could not read Username for &apos;https://github.com&apos;: Invalid argument</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <p><img src="http://img.blog.csdn.net/20170306142722422?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvR3JlZW5vdmlh/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="error截图"></p>
 <p>在服务器上部署一点问题都没有，但是在本地部署是就一直报这个错误<br>最后<strong>把_config.yml中的git仓库链接改成了ssh链接，然后又给git账户增加了ssh key</strong>才解决了问题。</p>
 <p><strong>具体方法如下：</strong></p>

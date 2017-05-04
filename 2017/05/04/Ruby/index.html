@@ -87,25 +87,16 @@
 
 
 
-<meta name="description" content="ruby：动态程式语言（无需编译）  //动态语言还有python、php、perl  //静态有c、c++、java（需要编译）作者：marz（日本）官网：http://ruby-doc.org/
-##数据类型整数、浮点数  = * - /字符串（在内容中的’单引号前加上/可防止溢出）
-数据类型内建转化api：   .to_f转化整数为浮点型   to_s转为字符转   to_i转为整数
-更多字">
+<meta name="description" content="ruby：动态程式语言（无需编译） //动态语言还有python、php、perl//静态有c、c++、java（需要编译）作者：marz（日本）官网：http://ruby-doc.org/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ruby学习笔记">
 <meta property="og:url" content="http://me.andylistudio.com/2017/05/04/Ruby/index.html">
 <meta property="og:site_name" content="Greenovia的博客">
-<meta property="og:description" content="ruby：动态程式语言（无需编译）  //动态语言还有python、php、perl  //静态有c、c++、java（需要编译）作者：marz（日本）官网：http://ruby-doc.org/
-##数据类型整数、浮点数  = * - /字符串（在内容中的’单引号前加上/可防止溢出）
-数据类型内建转化api：   .to_f转化整数为浮点型   to_s转为字符转   to_i转为整数
-更多字">
-<meta property="og:updated_time" content="2017-05-04T07:29:50.332Z">
+<meta property="og:description" content="ruby：动态程式语言（无需编译） //动态语言还有python、php、perl//静态有c、c++、java（需要编译）作者：marz（日本）官网：http://ruby-doc.org/">
+<meta property="og:updated_time" content="2017-05-04T07:49:07.824Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ruby学习笔记">
-<meta name="twitter:description" content="ruby：动态程式语言（无需编译）  //动态语言还有python、php、perl  //静态有c、c++、java（需要编译）作者：marz（日本）官网：http://ruby-doc.org/
-##数据类型整数、浮点数  = * - /字符串（在内容中的’单引号前加上/可防止溢出）
-数据类型内建转化api：   .to_f转化整数为浮点型   to_s转为字符转   to_i转为整数
-更多字">
+<meta name="twitter:description" content="ruby：动态程式语言（无需编译） //动态语言还有python、php、perl//静态有c、c++、java（需要编译）作者：marz（日本）官网：http://ruby-doc.org/">
 
 
 
@@ -350,8 +341,11 @@
       
 
       
-        <p>ruby：动态程式语言（无需编译）<br>  //动态语言还有python、php、perl<br>  //静态有c、c++、java（需要编译）<br>作者：marz（日本）<br>官网：<a href="http://ruby-doc.org/" target="_blank" rel="external">http://ruby-doc.org/</a></p>
-<p>##数据类型<br>整数、浮点数  = * - /<br>字符串（在内容中的’单引号前加上/可防止溢出）</p>
+        <blockquote>
+<p>ruby：动态程式语言（无需编译）<br> //动态语言还有python、php、perl<br>//静态有c、c++、java（需要编译）<br>作者：marz（日本）<br>官网：<a href="http://ruby-doc.org/" target="_blank" rel="external">http://ruby-doc.org/</a></p>
+</blockquote>
+<a id="more"></a>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>整数、浮点数  = * - /<br>字符串（在内容中的’单引号前加上/可防止溢出）</p>
 <h3 id="数据类型内建转化api："><a href="#数据类型内建转化api：" class="headerlink" title="数据类型内建转化api："></a>数据类型内建转化api：</h3><p>   .to_f转化整数为浮点型<br>   to_s转为字符转<br>   to_i转为整数</p>
 <h3 id="更多字符串方法"><a href="#更多字符串方法" class="headerlink" title="更多字符串方法"></a>更多字符串方法</h3><p>  reverse倒序<br>  length长度<br>  upcase大写<br>  downcase小写</p>
 <h3 id="字符串内插"><a href="#字符串内插" class="headerlink" title="字符串内插"></a>字符串内插</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">verb = &quot;work&quot;</div><div class="line">where = &quot;office&quot;</div><div class="line">puts &apos;I #&#123;verb&#125; at the #&#123;where&#125;&apos;</div></pre></td></tr></table></figure>
@@ -372,7 +366,7 @@
 <li><p>注解<br>单行：#<br>多行： =begin   ……  =end</p>
 </li>
 <li><p>数组Array</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">a = [ 1，“cat”，3.14 ]</div><div class="line"> puts a[0]  #1</div><div class="line"> puts a.size  #3</div><div class="line"> </div><div class="line"> a[2] = nil  #向 a[2] (赋值)</div><div class="line"> puts a.inspect  # 输出[ 1, &quot;cat&quot; , nil ]</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">a = [ 1，“cat”，3.14 ]</div><div class="line"> puts a[0]  #1</div><div class="line"> puts a.size  #3</div><div class="line"> </div><div class="line"> a[2] = nil  #向 a[2](赋值)</div><div class="line"> puts a.inspect  # 输出[ 1, &quot;cat&quot; , nil ]</div></pre></td></tr></table></figure>
 </li>
 <li><p>数组相关方法 </p>
 </li>
@@ -566,7 +560,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据类型内建转化api："><span class="nav-number">1.</span> <span class="nav-text">数据类型内建转化api：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更多字符串方法"><span class="nav-number">2.</span> <span class="nav-text">更多字符串方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串内插"><span class="nav-number">3.</span> <span class="nav-text">字符串内插</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他方法"><span class="nav-number">4.</span> <span class="nav-text">其他方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遍历循环"><span class="nav-number">5.</span> <span class="nav-text">遍历循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hash"><span class="nav-number">6.</span> <span class="nav-text">hash</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串符号symbol"><span class="nav-number">7.</span> <span class="nav-text">字符串符号symbol</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#控制流程"><span class="nav-number">8.</span> <span class="nav-text">控制流程</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据类型"><span class="nav-number">1.</span> <span class="nav-text">数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据类型内建转化api："><span class="nav-number">1.1.</span> <span class="nav-text">数据类型内建转化api：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更多字符串方法"><span class="nav-number">1.2.</span> <span class="nav-text">更多字符串方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串内插"><span class="nav-number">1.3.</span> <span class="nav-text">字符串内插</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他方法"><span class="nav-number">1.4.</span> <span class="nav-text">其他方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遍历循环"><span class="nav-number">1.5.</span> <span class="nav-text">遍历循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hash"><span class="nav-number">1.6.</span> <span class="nav-text">hash</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串符号symbol"><span class="nav-number">1.7.</span> <span class="nav-text">字符串符号symbol</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#控制流程"><span class="nav-number">1.8.</span> <span class="nav-text">控制流程</span></a></li></ol></li></ol></div>
             
 
           </div>
