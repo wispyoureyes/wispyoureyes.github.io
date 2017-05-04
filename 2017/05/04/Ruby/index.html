@@ -89,20 +89,23 @@
 
 <meta name="description" content="ruby：动态程式语言（无需编译）  //动态语言还有python、php、perl  //静态有c、c++、java（需要编译）作者：marz（日本）官网：http://ruby-doc.org/
 ##数据类型整数、浮点数  = * - /字符串（在内容中的’单引号前加上/可防止溢出）
-###数据类型内建转化api：   .to_f转化整数为浮点型   to_s转为字符转   to_i转为整数">
+数据类型内建转化api：   .to_f转化整数为浮点型   to_s转为字符转   to_i转为整数
+更多字">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ruby学习笔记">
 <meta property="og:url" content="http://me.andylistudio.com/2017/05/04/Ruby/index.html">
 <meta property="og:site_name" content="Greenovia的博客">
 <meta property="og:description" content="ruby：动态程式语言（无需编译）  //动态语言还有python、php、perl  //静态有c、c++、java（需要编译）作者：marz（日本）官网：http://ruby-doc.org/
 ##数据类型整数、浮点数  = * - /字符串（在内容中的’单引号前加上/可防止溢出）
-###数据类型内建转化api：   .to_f转化整数为浮点型   to_s转为字符转   to_i转为整数">
-<meta property="og:updated_time" content="2017-05-04T07:28:08.892Z">
+数据类型内建转化api：   .to_f转化整数为浮点型   to_s转为字符转   to_i转为整数
+更多字">
+<meta property="og:updated_time" content="2017-05-04T07:29:50.332Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ruby学习笔记">
 <meta name="twitter:description" content="ruby：动态程式语言（无需编译）  //动态语言还有python、php、perl  //静态有c、c++、java（需要编译）作者：marz（日本）官网：http://ruby-doc.org/
 ##数据类型整数、浮点数  = * - /字符串（在内容中的’单引号前加上/可防止溢出）
-###数据类型内建转化api：   .to_f转化整数为浮点型   to_s转为字符转   to_i转为整数">
+数据类型内建转化api：   .to_f转化整数为浮点型   to_s转为字符转   to_i转为整数
+更多字">
 
 
 
@@ -349,10 +352,9 @@
       
         <p>ruby：动态程式语言（无需编译）<br>  //动态语言还有python、php、perl<br>  //静态有c、c++、java（需要编译）<br>作者：marz（日本）<br>官网：<a href="http://ruby-doc.org/" target="_blank" rel="external">http://ruby-doc.org/</a></p>
 <p>##数据类型<br>整数、浮点数  = * - /<br>字符串（在内容中的’单引号前加上/可防止溢出）</p>
-<p>###数据类型内建转化api：<br>   .to_f转化整数为浮点型<br>   to_s转为字符转<br>   to_i转为整数</p>
-<p>###更多字符串方法<br>  reverse倒序<br>  length长度<br>  upcase大写<br>  downcase小写</p>
-<p>###字符串内插</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">verb = &quot;work&quot;</div><div class="line">where = &quot;office&quot;</div><div class="line">puts &apos;I #&#123;verb&#125; at the #&#123;where&#125;&apos;</div></pre></td></tr></table></figure>
+<h3 id="数据类型内建转化api："><a href="#数据类型内建转化api：" class="headerlink" title="数据类型内建转化api："></a>数据类型内建转化api：</h3><p>   .to_f转化整数为浮点型<br>   to_s转为字符转<br>   to_i转为整数</p>
+<h3 id="更多字符串方法"><a href="#更多字符串方法" class="headerlink" title="更多字符串方法"></a>更多字符串方法</h3><p>  reverse倒序<br>  length长度<br>  upcase大写<br>  downcase小写</p>
+<h3 id="字符串内插"><a href="#字符串内插" class="headerlink" title="字符串内插"></a>字符串内插</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">verb = &quot;work&quot;</div><div class="line">where = &quot;office&quot;</div><div class="line">puts &apos;I #&#123;verb&#125; at the #&#123;where&#125;&apos;</div></pre></td></tr></table></figure>
 <h3 id="其他方法"><a href="#其他方法" class="headerlink" title="其他方法"></a>其他方法</h3><ul>
 <li>.abs绝对值</li>
 <li>.class获取对象类型</li>
@@ -376,10 +378,9 @@
 </li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">//数组最后添加成员：</div><div class="line"> a.push(&quot;&quot;) 同 a &lt;&lt;&quot;white&quot;</div><div class="line">//数组转字符串：</div><div class="line">  a.join(&quot; ; &quot;)  #输出 1; cat; 3.14</div><div class="line">//字符串转数组：</div><div class="line">  &quot;a,b,c,d,e&quot;.splite(&quot;,&quot;)  #输出[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;]</div></pre></td></tr></table></figure>
-<p>###遍历循环</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">languages=[&apos;Ruby&apos;, &apos;javascript&apos;, &apos;Perl&apos;]</div><div class="line">languages.each do |lang|</div><div class="line">  puts &apos;I Love&apos; + lang + &apos;!&apos;</div><div class="line">end</div><div class="line"># 输出</div><div class="line"># I Love Ruby！</div><div class="line"># I Love javascript！</div><div class="line"># I Love Perl！</div></pre></td></tr></table></figure>
-<p>###hash<br>  用键名和值对应起来的数据结构形式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">config = &#123;&quot;foo&quot; =&gt; 123, &quot;bar&quot; =&gt; 456&#125;</div><div class="line">puts config[&quot;foo&quot;]  # 输出123</div></pre></td></tr></table></figure></p>
-<p>###字符串符号symbol<br>一个唯一且不会变动的识别名称<br>以冒号开头  eg:  “ :foo “<br><strong>和字符串的区别</strong></p>
+<h3 id="遍历循环"><a href="#遍历循环" class="headerlink" title="遍历循环"></a>遍历循环</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">languages=[&apos;Ruby&apos;, &apos;javascript&apos;, &apos;Perl&apos;]</div><div class="line">languages.each do |lang|</div><div class="line">  puts &apos;I Love&apos; + lang + &apos;!&apos;</div><div class="line">end</div><div class="line"># 输出</div><div class="line"># I Love Ruby！</div><div class="line"># I Love javascript！</div><div class="line"># I Love Perl！</div></pre></td></tr></table></figure>
+<h3 id="hash"><a href="#hash" class="headerlink" title="hash"></a>hash</h3><p>  用键名和值对应起来的数据结构形式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">config = &#123;&quot;foo&quot; =&gt; 123, &quot;bar&quot; =&gt; 456&#125;</div><div class="line">puts config[&quot;foo&quot;]  # 输出123</div></pre></td></tr></table></figure></p>
+<h3 id="字符串符号symbol"><a href="#字符串符号symbol" class="headerlink" title="字符串符号symbol"></a>字符串符号symbol</h3><p>一个唯一且不会变动的识别名称<br>以冒号开头  eg:  “ :foo “<br><strong>和字符串的区别</strong></p>
 <ul>
 <li>只有唯一的存储空间，不会浪费额外的空间，而同样字符串使用时每次都会分配新的存储空间</li>
 <li>无法使用字符串的方法来操作，如.reverse等<br><strong> 用symbol作为key来存储hash</strong><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">config = &#123; :foo =&gt; 123, :bar =&gt; 456&#125;</div><div class="line">puts config[:foo]  # 输出123</div><div class="line">//hash赋值</div><div class="line">config[:foo] = 999 </div><div class="line">puts config[:foo]  # 输出999</div></pre></td></tr></table></figure>
@@ -388,8 +389,7 @@
 <p>config = { foo： =&gt; 123, bar： =&gt; 456}是symbol的简洁写法</p>
 <p><strong>遍历哈希</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">config = &#123; foo： =&gt; 123, bar： =&gt; 456&#125;</div><div class="line">config.each do |key, value|</div><div class="line">  puts &quot;#&#123;key&#125; is #&#123;value&#125;&quot; #字符内插</div><div class="line">end</div><div class="line"># 输出 foo is 123</div><div class="line">       bar is 456</div></pre></td></tr></table></figure>
-<p>###控制流程</p>
-<ul>
+<h3 id="控制流程"><a href="#控制流程" class="headerlink" title="控制流程"></a>控制流程</h3><ul>
 <li>比较：&gt;, &lt;, ==, &gt;=, &lt;=, !=<br>&amp;&amp;, ||</li>
 <li>判断：if … elsif  … else … end</li>
 <li>三元运算：condtion ? result1 : result2</li>
@@ -566,7 +566,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#其他方法"><span class="nav-number">1.</span> <span class="nav-text">其他方法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据类型内建转化api："><span class="nav-number">1.</span> <span class="nav-text">数据类型内建转化api：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更多字符串方法"><span class="nav-number">2.</span> <span class="nav-text">更多字符串方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串内插"><span class="nav-number">3.</span> <span class="nav-text">字符串内插</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他方法"><span class="nav-number">4.</span> <span class="nav-text">其他方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遍历循环"><span class="nav-number">5.</span> <span class="nav-text">遍历循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hash"><span class="nav-number">6.</span> <span class="nav-text">hash</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串符号symbol"><span class="nav-number">7.</span> <span class="nav-text">字符串符号symbol</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#控制流程"><span class="nav-number">8.</span> <span class="nav-text">控制流程</span></a></li></ol></div>
             
 
           </div>
